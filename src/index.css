@@ -1,13 +1,133 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;700;800;900&display=swap');
+
+
+
+*{
+  /* outline: 1px solid red; */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('./assets/images/background.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin-top: -100px;
+}
+
+.main-text{
+  font-family: 'Inconsolata', monospace;
+  color: #ffff;
+  display: flex;
+  align-items: center;
+}
+
+.main-text .introduction{
+  width: 400px;
+  font-size: 4rem;
+}
+
+.main-text .currency-value{
+  font-size: 3rem;
+}
+
+.convertion-container{
+  display: flex;
+  gap: 30px;
+  border: 1px solid #ffff;
+  border-radius: 25px;
+  width: max-content;
+  height: 40px;
+  font-weight: 700;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffff;
+  padding: 25px;
+  font-family: 'Inconsolata', monospace;
+  font-size: 25px;
+}
+
+.value-divs{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+}
+
+.value-divs label{
+  color: lightslategray;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+#result{
+  min-width: 150px;
+}
+
+span{
+  font-size: 25px;
+}
+
+
+.convertion-container input{
+  border: none;
+  outline: 0;
+  height: 30px;
+  width: 120px;
+  font-size: 20px;
+  margin-left: 3px;
+}
+
+
+ul {
+  list-style: none;
+}
+li{
+  cursor: pointer;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+a:visited{
+  color: black;
+}
+
+
+button{
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 0;
+}
+
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
 }
